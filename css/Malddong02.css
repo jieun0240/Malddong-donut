@@ -1,0 +1,129 @@
+/* 전체 페이지 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f2f2f2; */
+}
+
+/* 로고 컨테이너 스타일 */
+.logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 로고 이미지 스타일 */
+.logo-container img {
+    max-width: 100px;
+}
+
+/* 카테고리 컨테이너 스타일 */
+.category-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px;
+    margin: auto;
+}
+
+/* 카테고리 스타일 */
+.category {
+    color: rgb(0, 0, 0);
+    /* font-weight: bold; */
+    font-size: 25px;
+    padding: 10px 0; /*상하 여백을 조절합니다. */
+    /* width: 550px;  */
+    text-align: center; /* 텍스트를 가운데 정렬합니다. */
+    margin: 0 80px; /*좌우 여백을 조절합니다. */
+}
+
+/* 배경 이미지 컨테이너 스타일 */
+.bgImg {
+    text-align: center;
+}
+
+/* 배경 이미지 스타일 */
+.bgImg img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 고객 스타일 */
+.customer {
+    padding: 5px; /* 여백 설정 (원하는 여백 값으로 변경 가능) */
+    position: relative;
+    top: -30px; /* 원하는 만큼 위로 이동 (음수 값으로 조절) */
+}
+
+/* 고객 링크 스타일 */
+.customer a {
+    color: #ED6498; /* 링크 텍스트 색상 설정 (원하는 색상으로 변경 가능) */
+    text-decoration: none; /* 밑줄 제거 */
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+/* 검색 스타일 */
+.search {
+    padding: 10px; /* 여백 설정 (원하는 여백 값으로 변경 가능) */
+    position: relative;
+    top: -30px;
+}
+
+/* 검색 아이콘 스타일 */
+.search i {
+    color: #000000;
+    font-size: 22px; /* 아이콘 크기 설정 (원하는 크기로 변경 가능) */
+}
+
+/* 검색 링크 스타일 */
+.search a {
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+/* 오른쪽 위치로 이동 */
+.customer, .search {
+    float: right;
+    margin-right: 20px; /* 오른쪽 여백 설정 (원하는 값으로 변경 가능) */
+}
+
+/* 베스트 메뉴 컨테이너 스타일 */
+.best.menu-container {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    z-index: 1; /* 다른 요소들과 겹치는 순서 제어 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* 이미지를 여러 행으로 나누기 위해 flex-wrap 속성 추가 */
+    margin-top: 20px;
+}
+
+/* 배경 이미지 스타일 */
+.bgImg {
+    position: relative;
+    z-index: 0; /* 다른 요소와 겹치지 않도록 설정 */
+}
+
+/* 베스트 이미지 컨테이너 스타일 */
+.bestImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* 이미지를 여러 행으로 나누기 위해 flex-wrap 속성 추가 */
+    margin-top: 20px;
+}
+
+/* 베스트 이미지 스타일 */
+.bestImg img {
+    width: 80px;
+    height: auto;
+    margin: 0 20px; /* 이미지 간격을 조절 (왼쪽과 오른쪽에 20px 간격) */
+}
+
+/* 이미지 간격 조정 (옵션) */
+.bestImg img + img {
+    margin-left: 40px; /* 이미지 사이의 간격을 조절 */
+}
